@@ -45,7 +45,7 @@ nav {
   padding: 50px;
 }
 .gmail-logo {
-  height: 25px;
+  height: 50px;
 }
 .link-from-github-logo {
   padding: 50px;
@@ -58,7 +58,4 @@ nav {
 }
 .modal-window {
   background-color: rgb(206, 209, 207);
-}
-.neon-sign {
-  height: 400px;
 }
