@@ -1,0 +1,21 @@
+{
+  "name": "davibelini.com",
+  "version": "1.0.0",
+  "description": "my website",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davibelini/davibelini.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davibelini/davibelini.com/issues"
+  },
+  "homepage": "https://github.com/davibelini/davibelini.com#readme"
+}
