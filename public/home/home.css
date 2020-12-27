@@ -4,7 +4,11 @@
   box-sizing: border-box;
   font-family: "IBM Plex Mono"; 
   font-weight: normal;
-  color: beige;
+  color: floralwhite;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   background: rgb(1, 2, 0);
@@ -13,8 +17,8 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  height: 75px;
-  border-bottom: 1px solid rgb(172, 209, 172);
+  height: 80px;
+  box-shadow: 0px -1px 2px 0 floralwhite;
 }
 nav {
   width: 100vw;
@@ -41,14 +45,11 @@ nav {
   text-decoration: underline;
   cursor: pointer;
 }
-.link-from-gmail-logo {
-  padding: 50px;
-}
-.gmail-logo {
-  height: 50px;
+li {
+  list-style: none;
 }
 .link-from-github-logo {
-  padding: 50px;
+  padding: 0 50px;
 }
 .github-logo {
   height: 50px;
@@ -56,6 +57,56 @@ nav {
 .text-links {
   display: flex;
 }
-.modal-window {
-  background-color: rgb(206, 209, 207);
+.title {
+  list-style: none;
+  margin: 0 50px;
+}
+.title h1 {
+  transition: 0.2s;
+  user-select: none;
+}
+.title h1:hover {
+  cursor: default;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: left;
+  position: relative;
+  z-index: -5;
+  width: 100vw;
+  height: 85vh;
+}
+.main-title {
+  font-family: "IBM Plex Serif";
+  font-weight: 700;
+}
+.sub-header {
+  position: sticky;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stuff-list {
+  display: flex;
+  justify-content: space-around;
+}
+.stuff-item {
+  font-family: "IBM Plex Serif";
+  font-weight: normal;
+  animation: enter-page 2s;
+  background-color: rgb(20, 20, 22);
+  border-radius: 5px;
+  padding: 2px 20px;
+}
+@keyframes enter-page {
+  0% {
+    position: relative;
+    left: -200px;
+  }
+  100% {
+    left: 180px;
+  }
 }
