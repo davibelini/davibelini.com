@@ -4,7 +4,7 @@ function typewriter(el) {
   textoArray.forEach((letter, i) => {
     setTimeout(() => {
       el.innerHTML += letter
-    }, i * 30);
+    }, i * 27.5);
   });
 }
 typewriter(document.querySelectorAll('.title')[1])

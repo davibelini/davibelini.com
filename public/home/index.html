@@ -5,7 +5,8 @@
     <title>davibelini</title>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
     <link href="./home.css" rel="stylesheet">
   </head>
   <body>
@@ -39,15 +40,16 @@
       <header class="sub-header">
         <nav class="stuff">
           <ul class="stuff-list">
-            <li class="stuff-item programming">programming</li>
-            <li class="stuff-item circuits">circuits</li>
-            <li class="stuff-item photos">photos</li>
-            <li class="stuff-item english">english</li>
+            <li class="stuff-item home" onclick="alert('hello')">home</li>
+            <li class="stuff-item programming" onclick="openTopic('programming')">programming</li>
+            <li class="stuff-item circuits" onclick="openTopic('circuits')">circuits</li>
+            <li class="stuff-item photos" onclick="openTopic('photos')">photos</li>
           </ul>
         </nav>
       </header>
-      <!--Scroll stuff photos-->
-      <!--stuff: programming, circuits, photos, english-->
+      <div class="scrolling-photo">
+        <img src="/assets/scrolling-photo-1.jpg" alt="scrolling photo" class="image1">
+      </div>
     </main>
     <script src="./home.js"></script>
   </body>
