@@ -28,9 +28,9 @@
               </a>
             </li>
             <li class="list-item">
-                <span class="text">
-                  <a class="link text-link" href="https://github.com/davibelini" target="_blank">my github</a>
-                </span>
+              <a class="link text-link" href="https://github.com/davibelini" target="_blank">
+                <span class="text">my github</span>
+              </a>
             </li>
           </div>  
         </ul>
@@ -40,15 +40,21 @@
       <header class="sub-header">
         <nav class="stuff">
           <ul class="stuff-list">
-            <li class="stuff-item home" onclick="alert('hello')">home</li>
-            <li class="stuff-item programming" onclick="openTopic('programming')">programming</li>
-            <li class="stuff-item circuits" onclick="openTopic('circuits')">circuits</li>
-            <li class="stuff-item photos" onclick="openTopic('photos')">photos</li>
+            <li class="stuff-item home">home</li>
+            <li class="stuff-item programming">programming</li>
+            <li class="stuff-item circuits">circuits</li>
+            <li class="stuff-item photos">photos</li>
           </ul>
         </nav>
       </header>
       <div class="scrolling-photo">
-        <img src="/assets/scrolling-photo-1.jpg" alt="scrolling photo" class="image1">
+        <div class="arrow arrow-left" onclick="elIndex--"><</div>
+          <div class="slide">
+            <div class="slide1 slide-content"><!--image--></div>
+            <div class="slide2 slide-content"><!--image--></div>
+            <div class="slide3 slide-content"><!--image--></div>
+          </div>
+        <div class="arrow arrow-right" onclick="elIndex++">></div>
       </div>
     </main>
     <script src="./home.js"></script>

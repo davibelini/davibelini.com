@@ -35,7 +35,7 @@ nav {
   list-style: none;
 }
 .text-link {
-  padding: 50px;
+  margin: 50px;
   text-decoration: none;
 }
 .text-link:hover {
@@ -109,10 +109,37 @@ main {
   height: 100%;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
-.image1 {
+.slide {
+  display: flex;
+}
+.slide-content {
+  border: 2px solid white;
+}
+.slide1 {
   height: 300px;
   width: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../assets/scrolling-photo-1.jpg");
+}
+.slide2 {
+  height: 300px;
+  width: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../assets/circuits.png");
+}
+.slide3 {
+  height: 300px;
+  width: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../assets/photos.jpg");
 }
 @keyframes enter-page {
   0% {

@@ -8,3 +8,18 @@ function typewriter(el) {
   });
 }
 typewriter(document.querySelectorAll('.title')[1])
+
+const photosParent = document.querySelector(".slide")
+const photos = document.querySelectorAll(".slide-content")
+const elements = [...photos]
+let elIndex = 0
+const selected = elements[elIndex]
+
+photos.forEach((photo) => {
+  if(photo == selected) {
+    return;
+  }
+  else {
+    photo.remove()
+  }
+})
