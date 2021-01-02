@@ -94,15 +94,17 @@ main {
   justify-content: space-around;
 }
 .stuff-item {
-  font-family: "IBM Plex Serif";
+  cursor: progress;
   font-weight: normal;
   animation: enter-page 2s;
   background-color: rgb(20, 20, 22);
   border-radius: 5px;
   padding: 2px 10px;
   border: 3px solid transparent;
+}
+.link {
   font-family: 'Titillium Web', sans-serif;
-  letter-spacing: 2px;
+  text-decoration: none;
 }
 .scrolling-photo {
   display: flex;
@@ -141,6 +143,14 @@ main {
   background-position: center;
   background-image: url("../assets/photos.jpg");
 }
+.arrow {
+  padding: 10px 30px;
+  font-size: 50px;
+}
+.arrow:hover {
+  transform: scaleX(100px) scaleY(100px);
+}
+
 @keyframes enter-page {
   0% {
     position: relative;
